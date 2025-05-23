@@ -132,3 +132,95 @@ Mais camadas e menor privilégio pra cada pessoa
 
 • Microsft Defender para nuvem → ferramenta para ver o ambiente, ação e correção para ambiente
 e vc pode ativar camadas de proteção.
+
+================================================== ATIVIDADES ======================================
+02- máqs vituais 
+Valores de SLA (acordo de tempo de inatividade) qnto > = tempo<
+Todos os serviços → computação → maqs vituais
++ criar (maq virtual do azure)
+Olhar disponibilidade → pode criar zonas de acordo com SLA
+IMG01
+
+Qntidade de zonas, até três
+IMG02
+
+
+O armazenamento tbm pode ser feito (mudando onde está o cursor):
+IMG03
+
+
+=========================================================================================================
+03- Instância de BD
+Ainda na criação de máq virtual é possível visualizar, de acordo com a escolha do SO, o valor mensal
+IMG04
+
+Avançar discos (parte de baixo) e vc continua a config
+IMG05
+
+Rede → gerenciamento → monitoramento 
+Tudo deve ser preenchido para criação 
+No menu à esq, há “Banco de Dados SQL”, para criar um BD
++ criar →
+IMG06
+
+Precisa fazer um servidor, ou indicar um.
+IMG07
+
+Escolhe modelo de redundância
+IMG08
+
+Já gerando o valor
+
+=========================================================================================================
+04- construindo arquiteturas
+Sites para ver arquiteturas:
+azure.microsoft.com
+datacenters.microsoft.com
+Dados sensíveis q não podem sair do Brasil, é preciso fazer um requerimento pra Microsoft para replicar aqui. 
+Nosso center fica em são Paulo (sudeste), e replicação no RJ. Se for Sul, replicação é pros EUA
+Criando grupo de recs:
+IMG09
+
+Menu dir → grupos de recursos
+IMG10
+sua assinatura já vem de acordo com sua, se tiver mais então escolhe. O resto vc configura
+Criar subtítulo para recs, colocar o nome e tals:
+IMG11
+
+
+
+É criado sem nada dentro
+IMG12
+
+Menu à esq → IAM é o controle de acesso!
+Todo gerenciamento no menu à esq
+Dá pra colocar dentro a rede virtual (vnet)
+IMG13
+IMG14
+
+=========================================================================================================
+05- conf recs e dimensionando máqs
+Maqs virtuais → +criar (máq virt do azure, outras já têm pré-config com soluções)
+Assinatura → grupo de recs → nome da máq → região → disponibilidade 
+
+*(opções: conj de dimensionamento de máqs virt) = criar novo → descer a pág até contagem de instâcias..
+No modo de dimensionamento = atualizar manualmente ou automático
+Contagem inicial = 2 e máx 20, é como vem, mas dá pra alterar (para black Friday), consulta padrão = 10, mas dá pra mudar.
+
+Instância spot = vc paga metade, mas se chegar alguém q quer pagar tudo vc sai. Vc é derrubado, vale pra desenvolvimento e teste
+NUNCA EM PRODUÇÃO.
+SEMPRE deixar marcado “excluir com a vm” na escolha do disco. PRA NÃO PAGAR MAIS
+
+Máq precisa estar na mesma localidade da Rede virtual q vc deseja alocar a máq
+SEMPRE DEIXAR: excluir IP público e a NIC qndo máq excluída
+Habilitar BACKUP
+
+Na parte de alertas dá pra habilitar alertas, assim q clica abre menu
+E por fim, já dá pra colocar uma extensão caso queira, como segurança ex
+No final já vem o preço
+
+•	 área de trab virtual → cria img em pool ou em pessoal (qndo tem algo q só ela acessa ou usa)
+
+•	Apps de funções → de acordo com a escolha da linguagem já gera o SO  
+
+
