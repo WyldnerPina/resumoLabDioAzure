@@ -139,36 +139,38 @@ Valores de SLA (acordo de tempo de inatividade) qnto > = tempo<
 Todos os serviços → computação → maqs vituais
 + criar (maq virtual do azure)
 Olhar disponibilidade → pode criar zonas de acordo com SLA
-IMG01
+
+![img01](https://github.com/WyldnerPina/resumoLabDioAzure/blob/main/img/img01.jpg)]
 
 Qntidade de zonas, até três
-IMG02
 
+![img02](https://github.com/WyldnerPina/resumoLabDioAzure/blob/main/img/img02.jpg)]
 
 O armazenamento tbm pode ser feito (mudando onde está o cursor):
-IMG03
 
+![img03](https://github.com/WyldnerPina/resumoLabDioAzure/blob/main/img/img03.jpg)]
 
 =========================================================================================================
 03- Instância de BD
 Ainda na criação de máq virtual é possível visualizar, de acordo com a escolha do SO, o valor mensal
-IMG04
 
+![img04](https://github.com/WyldnerPina/resumoLabDioAzure/blob/main/img/img04.jpg)]
 Avançar discos (parte de baixo) e vc continua a config
-IMG05
+
+![img05](https://github.com/WyldnerPina/resumoLabDioAzure/blob/main/img/img05.jpg)]
 
 Rede → gerenciamento → monitoramento 
 Tudo deve ser preenchido para criação 
 No menu à esq, há “Banco de Dados SQL”, para criar um BD
 + criar →
-IMG06
 
+![img06](https://github.com/WyldnerPina/resumoLabDioAzure/blob/main/img/img06.jpg)]
 Precisa fazer um servidor, ou indicar um.
-IMG07
 
+![img07](https://github.com/WyldnerPina/resumoLabDioAzure/blob/main/img/img07.jpg)]
 Escolhe modelo de redundância
-IMG08
 
+![img08](https://github.com/WyldnerPina/resumoLabDioAzure/blob/main/img/img08.jpg)]
 Já gerando o valor
 
 =========================================================================================================
@@ -179,24 +181,27 @@ datacenters.microsoft.com
 Dados sensíveis q não podem sair do Brasil, é preciso fazer um requerimento pra Microsoft para replicar aqui. 
 Nosso center fica em são Paulo (sudeste), e replicação no RJ. Se for Sul, replicação é pros EUA
 Criando grupo de recs:
-IMG09
 
+![img09](https://github.com/WyldnerPina/resumoLabDioAzure/blob/main/img/img09.jpg)]
 Menu dir → grupos de recursos
-IMG10
+
+![img10](https://github.com/WyldnerPina/resumoLabDioAzure/blob/main/img/img10.jpg)]
 sua assinatura já vem de acordo com sua, se tiver mais então escolhe. O resto vc configura
 Criar subtítulo para recs, colocar o nome e tals:
-IMG11
 
+![img11](https://github.com/WyldnerPina/resumoLabDioAzure/blob/main/img/img11.jpg)]
 
 
 É criado sem nada dentro
-IMG12
 
+![img12](https://github.com/WyldnerPina/resumoLabDioAzure/blob/main/img/img12.jpg)]
 Menu à esq → IAM é o controle de acesso!
 Todo gerenciamento no menu à esq
 Dá pra colocar dentro a rede virtual (vnet)
-IMG13
-IMG14
+
+![img13](https://github.com/WyldnerPina/resumoLabDioAzure/blob/main/img/img13.jpg)]
+
+![img14](https://github.com/WyldnerPina/resumoLabDioAzure/blob/main/img/img14.jpg)]
 
 =========================================================================================================
 05- conf recs e dimensionando máqs
