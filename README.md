@@ -224,6 +224,112 @@ Na parte de alertas dá pra habilitar alertas, assim q clica abre menu
 E por fim, já dá pra colocar uma extensão caso queira, como segurança ex
 No final já vem o preço
 
+=========================================================================================================
+06- Análise de sentimentos com language studio
+Laguage estúdio → ter conj de ferramentas, para entender frases. Ajuda a classificar um texto. Saber o qnto as pessoas estão felizes. O q as pessoas acham em uma única frase. Conseguimos personalizar com perguntas etc.
+Serviço de bot → visado para retorno de dúvidas. É preciso muita base de dado para ele ser bom. E a IA vai trazer as melhores respostas. Vai criar resposta através de palavras chaves. Sempre testar. Ajuda a ajustar os scripts para empresas que trabalham com atendimento por telefonia etc. 
+
+Linguagem coloquial → é a compreensão da IA com nossa linguagem do dia a dia. Formado por Declaração (o que eu quero q faça), Intenção (o q eu quero com isso), entidade (o aparelho q estou comandando) = tudo é uma síntese da fala. Reconhecimento e síntese da fala convertendo texto em fala e vice-versa q podemos usar.
+Links úteis: • aka.ms/ai900-speech
+	      • aka.ms/ai900-text-analysis
+Estúdio de fala:
+Speech.microsoft.com
+Transcreve arqv de aúdio. Ou contrário.
+Vá em config (engrenagem) → + criar novo rec
+Img15
+
+Depois volta e vá em conversão de fala em texto em tempo real
+Img16
+
+Selecionar o texto e a linguagem
+Img17
+
+Como usar e serviços para automatizar etc, pra cada serviço um preço:
+Img18
+
+Conhecendo o lenguage studio
+Create a resource → AI+ machine learning → language service (vai aparecer à dir nos ícones)
+Img19
+
+Config
+Img20
+
+
+Create, vai pro cognitive (outro site)
+Img21
+
+Criar um novo
+Img22
+
+Tipo classificação de texto
+Img23
+
+Analisar sentimentos e opiniões, então coloca-se o texto e é feita a análise 
+
+=========================================================================================================
+07-	Azure Cognitive Search: Utilizando AI Search para indexação e consulta de Dados
+Pesquisa cognitiva→ pega os dados e mineira para insights. Com a plat do azure pra isso. Preciso de um mecanismo de pesquisa, uma indexação (uma busca estratégica), e a sintaxe para auxiliar. E IA com treinamento pode fazer isso
+No Azure → dados recebidos e processados, IA é enriquecida para entender pesquisa. Entender modelo de negócio e tipo de pesquisa para saber o q fazer.
+Deve informar por json.
+Enriquecimento da IA → mais dados para a pesquisa, qnto mais melhor. Ter acesso ao máximo possível de info para alimentar IA.
+E como vou trabalhar esses dados.
+Documentação: aka.ms/ai-900-ia-search
+
+Buscas cognitivas → vá no AI Search
+Img24
+
+Create → e no price tier selecionar o tipo.
+Review + create. 
+E cria um AI servisse
+Img25
+ (feito acima)
+Img26
+
+MARCA o check box abaixo
+STORAGE ACOUTS → criar →
+Img27
+
+Precisa ser único no storage account name.
+Em redundância:
+ 
+Após review e create.
+Após criar, tela pronta
+Img28
+
+Por padrão tem algumas normal de segurança (em settings → configuration)
+Img29
+habilitar e salvar
+img30
+
+Dentro do storage → vá em + container →
+Img 31
+
+Criar
+Clica nele e já pode fazer upload de arqvs
+Img32
+
+Vá no mecanismo de busca (IA Search) e importa dados
+Img33
+
+Aponta onde está os docs e criar pesquisa 
+Img34
+
+Com uma revisão:
+Img35
+
+Faço uma tríade para automatizar a IA e trazer resultados de forma rápida e precisa.
+
+=========================================================================================================
+08-	Explorando os Recursos de IA Generativa com Copilot e OpenAI
+IA generativa responsável → planejamento das IAs, 4 fases = identificar (possíveis danos para o planejado), medida (dados na saída), mitigar (dificultar o máx o dano, se não funcionar em termo de cód) e operar (como implantar etc)
+•	Docs introdução → aka.ms/ai900-bing-copilot
+		       aka.ms/ai900-azure-openai
+		       aka.ms/ai900-content-filters
+copilot.microsoft.com para acessar (é a IA do bing)
+•	Microsoft learning → aka.ms/oaiapply
+Precisa solicitar para usar no azure. Precisa estar associado a uma organização.
+
+
 •	 área de trab virtual → cria img em pool ou em pessoal (qndo tem algo q só ela acessa ou usa)
 
 •	Apps de funções → de acordo com a escolha da linguagem já gera o SO  
