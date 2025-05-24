@@ -19,6 +19,7 @@ várias outros recursos para a criação
 → versão prévia = NÃO TEM GARANTIA, se usar microsoft não se responsabilizará
 
 BENEFÍCIOS NUVEM =========================================================
+
 1- alta disponibilidade
 SLA = acordo de disponibilidade do serviço, se além recebe crédito 
 (↑ disponibilidade = > tempo disponível)
@@ -38,6 +39,7 @@ Governaça → auditoria, para sinalizar recursos e mitigação. padrões corpor
 Gerenciabilidade → facilita gerenciamento de recs. criar pelo portal, linha de comando, etc. Modelo pré-configurado. Vc ajusta (gerencia) do seu jeito
 
 TIPOS DE SERVIÇO DE NUVEM ===============================================
+
 * Responsabilidade compartilhada *
 IaaS → Infra como serviço (as a Service)
 Tenho mais acesso a configuração. e tenho mais acesso ao final. 
@@ -62,6 +64,7 @@ Local → soma Host, Rede, Datacenter (nada compartilhado)
 
 
 COMPONENTES DA ARQTT AZURE ==============================================
+
 *****Regiões e zonas de disponibilidade
 Regiões disponíveis → qndo criamos dizemos onde vai ficar, faço próximo por
 causa do delay. cada lugar um valor diferente e recursos não disponíveis em
@@ -92,6 +95,7 @@ pode ter várias para cada grupo de trab: desenvolvimento, teste e produção
 
 
 COMPUTAÇÃO E REDE =======================================================
+
 • Tipos de computação → serviços:maqs, apps, container, área de trab vitual...
 • VMs → Dá pra criar tudo menos mexer no hard (IaaS). lift-n-shift subo maq pra nuvem = tenho
 • Conjuntos de dimensionamento → oportunidade para balanceamento de carga automat
@@ -112,6 +116,7 @@ gataway de VPN tbm. expressRoute (estende redes locais para azure)
 
 
 IDENTIDADE ACESSO E SEG =================================================
+
 • ID do Microsft Entra → serviço de gerenciamento de diretório e identidades
 autenticação, login único (SSO), gerencia de APPs, negocio para negocio (b2b) etc
 
@@ -133,47 +138,54 @@ Mais camadas e menor privilégio pra cada pessoa
 • Microsft Defender para nuvem → ferramenta para ver o ambiente, ação e correção para ambiente
 e vc pode ativar camadas de proteção.
 
-================================================== ATIVIDADES ======================================
+================================================== ATIVIDADES 
+
 02- máqs vituais 
 Valores de SLA (acordo de tempo de inatividade) qnto > = tempo<
 Todos os serviços → computação → maqs vituais
 + criar (maq virtual do azure)
 Olhar disponibilidade → pode criar zonas de acordo com SLA
 
-![img01](https://github.com/WyldnerPina/resumoLabDioAzure/blob/main/img/img01.jpg)]
+![img01](https://github.com/WyldnerPina/resumoLabDioAzure/blob/main/img/img01.jpg)
 
 Qntidade de zonas, até três
 
-![img02](https://github.com/WyldnerPina/resumoLabDioAzure/blob/main/img/img02.jpg)]
+![img02](https://github.com/WyldnerPina/resumoLabDioAzure/blob/main/img/img02.jpg)
 
 O armazenamento tbm pode ser feito (mudando onde está o cursor):
 
-![img03](https://github.com/WyldnerPina/resumoLabDioAzure/blob/main/img/img03.jpg)]
+![img03](https://github.com/WyldnerPina/resumoLabDioAzure/blob/main/img/img03.jpg)
 
-=========================================================================================================
+==================================================================================
+
 03- Instância de BD
 Ainda na criação de máq virtual é possível visualizar, de acordo com a escolha do SO, o valor mensal
 
-![img04](https://github.com/WyldnerPina/resumoLabDioAzure/blob/main/img/img04.jpg)]
+![img04](https://github.com/WyldnerPina/resumoLabDioAzure/blob/main/img/img04.jpg)
+
 Avançar discos (parte de baixo) e vc continua a config
 
-![img05](https://github.com/WyldnerPina/resumoLabDioAzure/blob/main/img/img05.jpg)]
+![img05](https://github.com/WyldnerPina/resumoLabDioAzure/blob/main/img/img05.jpg)
 
 Rede → gerenciamento → monitoramento 
 Tudo deve ser preenchido para criação 
 No menu à esq, há “Banco de Dados SQL”, para criar um BD
 + criar →
 
-![img06](https://github.com/WyldnerPina/resumoLabDioAzure/blob/main/img/img06.jpg)]
+![img06](https://github.com/WyldnerPina/resumoLabDioAzure/blob/main/img/img06.jpg)
+
 Precisa fazer um servidor, ou indicar um.
 
-![img07](https://github.com/WyldnerPina/resumoLabDioAzure/blob/main/img/img07.jpg)]
+![img07](https://github.com/WyldnerPina/resumoLabDioAzure/blob/main/img/img07.jpg)
+
 Escolhe modelo de redundância
 
-![img08](https://github.com/WyldnerPina/resumoLabDioAzure/blob/main/img/img08.jpg)]
+![img08](https://github.com/WyldnerPina/resumoLabDioAzure/blob/main/img/img08.jpg)
+
 Já gerando o valor
 
-=========================================================================================================
+==================================================================================
+
 04- construindo arquiteturas
 Sites para ver arquiteturas:
 azure.microsoft.com
@@ -182,28 +194,32 @@ Dados sensíveis q não podem sair do Brasil, é preciso fazer um requerimento p
 Nosso center fica em são Paulo (sudeste), e replicação no RJ. Se for Sul, replicação é pros EUA
 Criando grupo de recs:
 
-![img09](https://github.com/WyldnerPina/resumoLabDioAzure/blob/main/img/img09.jpg)]
+![img09](https://github.com/WyldnerPina/resumoLabDioAzure/blob/main/img/img09.jpg)
+
 Menu dir → grupos de recursos
 
-![img10](https://github.com/WyldnerPina/resumoLabDioAzure/blob/main/img/img10.jpg)]
+![img10](https://github.com/WyldnerPina/resumoLabDioAzure/blob/main/img/img10.jpg)
+
 sua assinatura já vem de acordo com sua, se tiver mais então escolhe. O resto vc configura
 Criar subtítulo para recs, colocar o nome e tals:
 
-![img11](https://github.com/WyldnerPina/resumoLabDioAzure/blob/main/img/img11.jpg)]
+![img11](https://github.com/WyldnerPina/resumoLabDioAzure/blob/main/img/img11.jpg)
 
 
 É criado sem nada dentro
 
-![img12](https://github.com/WyldnerPina/resumoLabDioAzure/blob/main/img/img12.jpg)]
+![img12](https://github.com/WyldnerPina/resumoLabDioAzure/blob/main/img/img12.jpg)
+
 Menu à esq → IAM é o controle de acesso!
 Todo gerenciamento no menu à esq
 Dá pra colocar dentro a rede virtual (vnet)
 
-![img13](https://github.com/WyldnerPina/resumoLabDioAzure/blob/main/img/img13.jpg)]
+![img13](https://github.com/WyldnerPina/resumoLabDioAzure/blob/main/img/img13.jpg)
 
-![img14](https://github.com/WyldnerPina/resumoLabDioAzure/blob/main/img/img14.jpg)]
+![img14](https://github.com/WyldnerPina/resumoLabDioAzure/blob/main/img/img14.jpg)
 
-=========================================================================================================
+==================================================================================
+
 05- conf recs e dimensionando máqs
 Maqs virtuais → +criar (máq virt do azure, outras já têm pré-config com soluções)
 Assinatura → grupo de recs → nome da máq → região → disponibilidade 
@@ -224,7 +240,8 @@ Na parte de alertas dá pra habilitar alertas, assim q clica abre menu
 E por fim, já dá pra colocar uma extensão caso queira, como segurança ex
 No final já vem o preço
 
-=========================================================================================================
+==================================================================================
+
 06- Análise de sentimentos com language studio
 Laguage estúdio → ter conj de ferramentas, para entender frases. Ajuda a classificar um texto. Saber o qnto as pessoas estão felizes. O q as pessoas acham em uma única frase. Conseguimos personalizar com perguntas etc.
 Serviço de bot → visado para retorno de dúvidas. É preciso muita base de dado para ele ser bom. E a IA vai trazer as melhores respostas. Vai criar resposta através de palavras chaves. Sempre testar. Ajuda a ajustar os scripts para empresas que trabalham com atendimento por telefonia etc. 
@@ -236,37 +253,46 @@ Estúdio de fala:
 Speech.microsoft.com
 Transcreve arqv de aúdio. Ou contrário.
 Vá em config (engrenagem) → + criar novo rec
-Img15
+
+![img15](https://github.com/WyldnerPina/resumoLabDioAzure/blob/main/img/img15.jpg)
 
 Depois volta e vá em conversão de fala em texto em tempo real
-Img16
+
+![img16](https://github.com/WyldnerPina/resumoLabDioAzure/blob/main/img/img16.jpg)
 
 Selecionar o texto e a linguagem
-Img17
+
+![img17](https://github.com/WyldnerPina/resumoLabDioAzure/blob/main/img/img17.jpg)
 
 Como usar e serviços para automatizar etc, pra cada serviço um preço:
-Img18
+
+![img18](https://github.com/WyldnerPina/resumoLabDioAzure/blob/main/img/img18.jpg)
 
 Conhecendo o lenguage studio
 Create a resource → AI+ machine learning → language service (vai aparecer à dir nos ícones)
-Img19
+
+![img19](https://github.com/WyldnerPina/resumoLabDioAzure/blob/main/img/img19.jpg)
 
 Config
-Img20
 
+![img20](https://github.com/WyldnerPina/resumoLabDioAzure/blob/main/img/img20.jpg)
 
 Create, vai pro cognitive (outro site)
-Img21
+
+![img21](https://github.com/WyldnerPina/resumoLabDioAzure/blob/main/img/img21.jpg)
 
 Criar um novo
-Img22
+
+![img22](https://github.com/WyldnerPina/resumoLabDioAzure/blob/main/img/img22.jpg)
 
 Tipo classificação de texto
-Img23
+
+![img23](https://github.com/WyldnerPina/resumoLabDioAzure/blob/main/img/img23.jpg)
 
 Analisar sentimentos e opiniões, então coloca-se o texto e é feita a análise 
 
-=========================================================================================================
+==================================================================================
+
 07-	Azure Cognitive Search: Utilizando AI Search para indexação e consulta de Dados
 Pesquisa cognitiva→ pega os dados e mineira para insights. Com a plat do azure pra isso. Preciso de um mecanismo de pesquisa, uma indexação (uma busca estratégica), e a sintaxe para auxiliar. E IA com treinamento pode fazer isso
 No Azure → dados recebidos e processados, IA é enriquecida para entender pesquisa. Entender modelo de negócio e tipo de pesquisa para saber o q fazer.
@@ -276,50 +302,65 @@ E como vou trabalhar esses dados.
 Documentação: aka.ms/ai-900-ia-search
 
 Buscas cognitivas → vá no AI Search
-Img24
+
+![img24](https://github.com/WyldnerPina/resumoLabDioAzure/blob/main/img/img24.jpg)
 
 Create → e no price tier selecionar o tipo.
 Review + create. 
 E cria um AI servisse
-Img25
+
+![img25](https://github.com/WyldnerPina/resumoLabDioAzure/blob/main/img/img25.jpg)
+
  (feito acima)
-Img26
+
+![img26](https://github.com/WyldnerPina/resumoLabDioAzure/blob/main/img/img26.jpg)
 
 MARCA o check box abaixo
 STORAGE ACOUTS → criar →
-Img27
+
+![img27](https://github.com/WyldnerPina/resumoLabDioAzure/blob/main/img/img27.jpg)
 
 Precisa ser único no storage account name.
 Em redundância:
  
 Após review e create.
 Após criar, tela pronta
-Img28
+
+![img28](https://github.com/WyldnerPina/resumoLabDioAzure/blob/main/img/img28.jpg)
 
 Por padrão tem algumas normal de segurança (em settings → configuration)
-Img29
+
+![img29](https://github.com/WyldnerPina/resumoLabDioAzure/blob/main/img/img29.jpg)
+
 habilitar e salvar
-img30
+
+![img30](https://github.com/WyldnerPina/resumoLabDioAzure/blob/main/img/img30.jpg)
 
 Dentro do storage → vá em + container →
-Img 31
+
+![img31](https://github.com/WyldnerPina/resumoLabDioAzure/blob/main/img/img31.jpg)
 
 Criar
 Clica nele e já pode fazer upload de arqvs
-Img32
+
+![img32](https://github.com/WyldnerPina/resumoLabDioAzure/blob/main/img/img32.jpg)
 
 Vá no mecanismo de busca (IA Search) e importa dados
-Img33
+
+![img33](https://github.com/WyldnerPina/resumoLabDioAzure/blob/main/img/img33.jpg)
 
 Aponta onde está os docs e criar pesquisa 
-Img34
+
+![img34](https://github.com/WyldnerPina/resumoLabDioAzure/blob/main/img/img34.jpg)
 
 Com uma revisão:
-Img35
+
+![img35](https://github.com/WyldnerPina/resumoLabDioAzure/blob/main/img/img35.jpg)
 
 Faço uma tríade para automatizar a IA e trazer resultados de forma rápida e precisa.
 
-=========================================================================================================
+==================================================================================
+
 08-	Explorando os Recursos de IA Generativa com Copilot e OpenAI
 IA generativa responsável → planejamento das IAs, 4 fases = identificar (possíveis danos para o planejado), medida (dados na saída), mitigar (dificultar o máx o dano, se não funcionar em termo de cód) e operar (como implantar etc)
 •	Docs introdução → aka.ms/ai900-bing-copilot
